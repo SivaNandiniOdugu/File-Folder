@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["ES2017","DOM"],
+
+    "module": "CommonJS",
+    "strict": true,
+
+    "outDir": "./dist",
+    "rootDir": "./",
+
+    "skipLibCheck": true
+  }
+}
