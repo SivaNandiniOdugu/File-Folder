@@ -1,0 +1,134 @@
+body{
+    background-color: hsl(244, 100%, 29%);
+    color: white;
+}
+@font-face {
+    font-family:'Poppins';
+    src: url('Fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 100-900;
+}
+h1{
+    color:white;
+    font-size:3.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+     margin:0;
+     font-style: italic;
+}
+h3{
+    color:white;
+    font-size:3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+     margin-left:50px;
+     font-style: italic;
+     margin-bottom: 0;
+}
+.Header{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+.ipl-logo{
+    width: 150px;
+    height: 150px;
+   
+}
+.team-logo{
+    width: 50px;
+    height: 50px;
+    margin-right:0;
+  
+}
+.img{
+    text-align: left;
+    padding-left: 18px;
+}
+.img img{
+vertical-align: middle;
+width: 35px;
+height: 35px;
+margin-right:10px;
+}
+
+.img span{
+vertical-align: middle;
+}
+.Heading{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+} 
+
+table{
+
+    border-collapse:separate;
+    border-spacing: 0 15px;
+    width: 100%;
+    text-align: center;
+    font-family:'Poppins';
+  
+   text-shadow:0 0 1px white;
+   
+    
+}
+.table-container{
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+     margin-top:50px;
+}
+tr{
+  
+    font-size:20px;
+    font-weight:bold;
+}
+
+tr td:first-child{
+    border-top-left-radius:7px;
+    border-bottom-left-radius:7px;
+}
+tr td:last-child{
+    border-top-right-radius:7px;
+    border-bottom-right-radius:7px;
+}
+.rcb{
+ background:linear-gradient(180deg, hsl(0, 96%, 46%), hsl(0, 100%, 51%));
+
+}
+
+.srh{
+
+ background:linear-gradient(180deg, hsl(12, 100%, 50%), hsl(19, 100%, 50%));
+}
+.mi{
+ background:linear-gradient(190deg, hsl(229, 100%, 47%), hsl(231, 100%, 50%));
+
+}
+.csk{
+ background:linear-gradient(180deg,hsl(54, 100%, 50%), hsl(61, 100%, 50%));
+
+}
+.kkr{
+ background:linear-gradient(180deg,hsl(273, 100%, 37%), hsl(283, 84%, 35%));
+
+}
+.gt{
+ background:linear-gradient(180deg,hsl(242, 71%, 20%), hsl(241, 62%, 16%));
+
+}
+.rr{
+ background:linear-gradient(180deg,hsl(323, 100%, 50%), hsl(325, 100%, 50%));
+
+}
+.dc{
+ background:linear-gradient(180deg,hsl(253, 98%, 48%), hsl(246, 100%, 50%));
+
+}
+.pkbs{
+ background:linear-gradient(180deg,hsl(12, 100%, 50%), hsl(0, 100%, 50%));
+
+}
+.lsg{
+ background:linear-gradient(180deg,hsl(226, 100%, 50%), hsl(256, 100%, 50%));
+
+}
+
