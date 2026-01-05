@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+ background-color:rgb(238, 238, 238);
+ height:200vh;
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('./Fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight:100-900;
+    font-style: normal;
+}
+.Header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+  background-color: rgb(255, 102, 0);
+}
+.heading{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+ 
+  
+
+}
+.title{ 
+   
+    text-align:left;
+    font-size:3.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    font-weight: 500;
+}
+.logo-img{
+   margin-left:20px;
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+}
+.navbar{
+
+
+ height: 60px;
+display: flex;
+flex-direction:row;
+align-items: center;
+justify-content: space-around;
+border-bottom: 1px solid rgb(165, 161, 161);
+background-color: rgb(22, 22, 22);
+   
+}
+
+a{
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'BebasNeue';
+    
+}
+a:hover{
+    font-weight:650;
+   
+}
+.sign-up{
+    border:none;
+ background-color: rgb(14, 14, 14);
+    cursor: pointer;
+    display: flex;
+    gap:3px;
+    align-items: center;
+   
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.sign-up:hover{
+    background-color: rgb(48, 48, 48);
+    font-weight:650;
+   
+}
+.person-add-img{
+    width: 23px;
+    height: 23px;
+   background-color: white;
+   padding:2px;
+   border-radius:50%;  
+}
+
+.Search-bar{
+    height:100vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./Foods/aromatic-chicken-biryani-in-a-copper-pot.webp");
+    background-size: cover;
+   background-position:center;
+   background-repeat: no-repeat;
+
+}
+.search{
+  
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.search-icon{
+    width: 20px;
+    height: 20px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+.search::placeholder{
+    padding-left:5px;
+    font-size: 18px;
+    font-family:cursive;
+}
+
