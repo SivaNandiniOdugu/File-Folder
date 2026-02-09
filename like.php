@@ -19,7 +19,7 @@ $conn = new mysqli("localhost", "root", "", "db");
 if ($conn->connect_error) {
     echo json_encode(["error" => "DB connection failed"]);
     exit;
-}
+}9
 
 // Check if already liked
 $check = $conn->query("SELECT * FROM likes WHERE post_id = $postId");

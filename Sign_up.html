@@ -12,17 +12,23 @@
     <div class="container">
     <span class="title">Sign-up</span>
     <p>Enter your credentials below:</p>
-    <form id="signupform">
+    <form id="signupform" method="post" action="Sign_up.php">
     
-        <input type="text" id="name" class="input-text" placeholder="Name" > <br><br>
+        <input type="text" name="username" id="username" class="input-text" placeholder="Name" required > <br><br>
 
-        <input type="email"  id="email" class="input-text"   placeholder="Email"> <br><br>
-        <input type="password" id="password" class="input-text"  name="Password" placeholder="Password"><br><br>
+        <input type="email" name="email" id="email"  class="input-text"   placeholder="Email" required> <br><br>
+        <input type="password" name="password" id="password" class="input-text"   placeholder="Password" minlength="6" required><br><br>
         <input type="checkbox"><span class="remember-me">Remember Me</span> <br><br>
         <button type="submit" id="submitbtn" class="sign-in-button">Sign up</button>
-       
+    
+        <div> <p id="ErrorMsg"></p> </div> 
+
     </form>
-    <p id="ErrorMsg"></p>
+   
+
+
+
+
     </div>
     <script src="Sign_up.js"></script>
 </body>
