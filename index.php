@@ -39,7 +39,7 @@ body{
     src: url('./Fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
     font-weight:100-900;
     font-style: normal;
-}
+}git 
 .title{
     text-align: center;
     font-size: 35px;

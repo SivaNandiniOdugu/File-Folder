@@ -29,6 +29,7 @@ if (isset($_GET['code'])) {
         'picture' => $user->picture
     ];
 
-    header('Location: index.php');
+ header('Location: index.php');
     exit();
 }
+   

@@ -33,7 +33,7 @@ Removes a configuration value.
 **Example**
 git config --unset user.name 
 git config --global --unset user.email (removes globally)
-
+**Screenshot**
 ![git config](screenshots\ConfigImg.png)
 
 
@@ -75,7 +75,8 @@ git clone --depth 1 <url>
 Shallow clone, downloads only the latest commit, when repo is very large & you only need latest code.
 **Example**
 git clone --depth 1 https://github.com/Rakesh-18112006/ESP-Website.git
-
+**Screenshot**
+![git clone](screenshots\Clone.png)
 
 
 
@@ -88,6 +89,8 @@ git status
 Shows current working directory status.
 **Example**
 git status
+**Screenshot**
+![git status](screenshots\GitStatus.png)
 
 ## 10. git log
 **Syntax**
@@ -96,6 +99,8 @@ git log
 Shows complete commit history
 **Example**
 git log
+**Screenshot**
+![git log](screenshots\Git_log.png)
 
 ## 11. git log --oneline
 **Syntax**
@@ -104,13 +109,17 @@ git log --oneline
 Shows compact commit history.
 **Example**
 git log --oneline
+**Screenshot**
+![git clone](screenshots\Gitdiff.png)
 
 ## 12. git diff
 **Syntax**
-git status
+git diff
 **purpose:**
 Shows differences between working directory and last commit.
 **Example**
 git diff
 
+**Screenshot**
+![git clone](screenshots\Gitdiff.png)
 
