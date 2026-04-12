@@ -1,14 +1,11 @@
 <?php
-
-if ($_SERVER["REQUEST_METHOD"] != "POST") {
+if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     echo "Invalid request";
     exit;
 }
-
-
-$name     = $_POST['username'] ?? '';
-$email    = $_POST['email'] ?? '';
-$password = $_POST['password'] ?? '';
+$name     = trim($_POST['username'] ?? '');
+$email    = trim($_POST['email'] ?? '');
+$password = trim($_POST['password'] ?? '');
 
 if (empty($name) || empty($email) || empty($password)) {
     echo "All fields are required";
@@ -20,37 +17,29 @@ if (strlen($password) < 6) {
     exit;
 }
 
-
 $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-
-
 $conn = new mysqli("localhost", "root", "", "db");
 
 if ($conn->connect_error) {
     die("Database connection failed");
 }
-
-$checkEmail = "SELECT id FROM users WHERE email = '$email'";
-$result = $conn->query($checkEmail);
+$stmt = $conn->prepare("SELECT id FROM users WHERE email=?");
+$stmt->bind_param("s", $email);
+$stmt->execute();
+$result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
-    echo "Account already exists. Please login.";
+    echo "Email already exists";
     exit;
 }
+$stmt = $conn->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
+$stmt->bind_param("sss", $name, $email, $hashedPassword);
 
-
-$insertQuery = "
-    INSERT INTO users (username, email, password)
-    VALUES ('$name', '$email', '$hashedPassword')
-";
-
-if ($conn->query($insertQuery)) {
-    echo "Signup successful!";
+if ($stmt->execute()) {
+    echo "Signup successful";
 } else {
     echo "Something went wrong";
 }
 
-
 $conn->close();
-
 ?>
